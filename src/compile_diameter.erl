@@ -153,7 +153,7 @@ dia_filename(File, Spec) ->
             Name
     end.
 
-compile_order(DiaFiles, Opts) ->
+compile_order(DiaFiles, _Opts) ->
     Graph = digraph:new(),
 
     DiaMods =
